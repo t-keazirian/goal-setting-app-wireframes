@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 10; */
+  padding-bottom: 10px;
+}
+
+nav, footer {
+  padding: 10px;
+  background-color: #aaa;
+}
+
+main {
+  margin-top: 50px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  /* margin: 15px; */
+}
+
+label {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+form textarea {
+  height: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+section.goal-notes, section.goal-category, section.form-section, section.date {
+  align-items: center;
+}
+
+input#goal-name {
+  width: 50%;
+  text-align: center;
+}
+
+[type=submit], button {
+  margin-top: 10px;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .add-dream-form {
+    flex-direction: row;
+
+  }
+}
