@@ -8,6 +8,7 @@ body {
 }
 
 nav {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,6 +16,7 @@ nav {
   /* z-index: 10; */
   padding: 10px;
   background-color: #aaa;
+  justify-content: space-around;
 }
 
 main {

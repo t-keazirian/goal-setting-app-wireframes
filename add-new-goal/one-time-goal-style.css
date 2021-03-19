@@ -42,7 +42,6 @@ label {
 
 form textarea {
   height: 50px;
-  width: 50%;
   text-align: center;
 }
 
@@ -57,15 +56,12 @@ section.checkbox-section {
 }
 
 input#goal-name {
-  width: 50%;
   text-align: center;
 }
 
 [type=submit], button {
   margin-top: 10px;
 }
-
-
 
 @media all and (min-width: 800px) {
   section {

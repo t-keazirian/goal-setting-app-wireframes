@@ -44,14 +44,24 @@ label {
   font-size: 18px;
 }
 
-section.goal-notes, section.goal-category, section.form-section, section.date,  section.checkbox-section {
+section.goal-notes, section.goal-category, section.form-section,  section.checkbox-section {
   align-items: center;
+}
+
+form textarea {
+  height: 50px;
+  text-align: center;
+}
+
+input#goal-name {
+  text-align: center;
 }
 
 section.checkbox-section {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 10px;
+  justify-content: center;
 }
 
 .days {
