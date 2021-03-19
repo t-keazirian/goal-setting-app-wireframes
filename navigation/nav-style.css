@@ -15,6 +15,17 @@ nav {
   right: 0;
   padding: 10px;
   background-color: #aaa;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.homepage-link {
+  text-align: start;
+}
+
+@media all and (min-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 

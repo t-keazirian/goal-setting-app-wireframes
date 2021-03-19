@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="dashboard-style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+		/>
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<nav>Nav</nav>
+		<main>
+			<section class="buttons">
+				<button class="add-recurring">Add Recurring Goal</button>
+				<button class="add-one-time">Add One-Time Goal</button>
+			</section>
+      <section class="goal-summary-container">
+        <div class="goal-summary">
+          <h3 class="goal-header">Viewing __ Total Goals</h3>
+        </div>
+        <div class="goals-filter">
+          <input type="text" class="name-search" placeholder="Search goals by name">
+          <select name="goal-category" id="goal-category">
+            <option value="" selected disabled>Search by Category</option>
+            <option value="get-fit">Get Fit</option>
+            <option value="nutrition">Nutrition</option>
+            <option value="personal-growth">Personal Growth</option>
+            <option value="learn-skill">Learn A Skill</option>
+            <option value="be-productive">Be Productive</option>
+            <option value="mindfulness">Mindfulness</option>
+            <option value="sleep">Sleep</option>
+          </select>
+          <select name="goal-type" id="goal-type">
+            <option value="" selected disabled>Search by Type</option>
+            <option value="one-time">One-Time Goals</option>
+            <option value="recurring">Recurring Goals</option>
+          </select>
+        </div>
+        <!-- Total Goals here -->
+      </section>
+		</main>
+	</body>
+</html>
