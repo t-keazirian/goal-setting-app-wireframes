@@ -32,7 +32,6 @@ footer {
 section {
   display: flex;
   flex-direction: column;
-  /* margin: 15px; */
 }
 
 label {
@@ -51,6 +50,12 @@ section.goal-notes, section.goal-category, section.form-section, section.date {
   align-items: center;
 }
 
+section.checkbox-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
 input#goal-name {
   width: 50%;
   text-align: center;
@@ -60,12 +65,13 @@ input#goal-name {
   margin-top: 10px;
 }
 
+
+
 @media all and (min-width: 800px) {
   section {
     padding: 0 10%;
   }
-  .add-dream-form {
+  .add-goal-form {
     flex-direction: row;
-
   }
 }

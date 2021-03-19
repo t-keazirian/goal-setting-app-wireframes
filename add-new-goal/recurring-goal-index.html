@@ -4,23 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="add-new-goal-style.css" />
+		<link rel="stylesheet" href="recurring-goal-style.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
 			crossorigin="anonymous"
 		/>
-		<title>HTML Wireframe - Add New Goal Page</title>
+		<title>HTML Wireframe - Recurring Add New Goal</title>
 	</head>
 	<body>
 		<nav>Nav</nav>
 		<main>
 			<header>
-				<h1>New Goal</h1>
+				<h1>New Recurring Goal</h1>
 			</header>
 			<section>
-				<form class="add-dream-form">
+				<form class="add-goal-form">
 					<section class="form-section">
 						<label for="goal-name">Goal:</label>
 						<input
@@ -53,9 +53,42 @@
 							placeholder="optional notes"
 						></textarea>
 					</section>
-					<section class="date">
-						<label for="date">Date to Complete:</label>
-						<input type="date" id="date" name="date">
+					<section class="checkbox-section">
+						<h3>On what days would you like to complete this goal:</h3> 
+						<input type="checkbox" id="monday" name="monday" value="Monday" />
+						<label class="days" for="monday">Monday</label><br />
+						<input
+							type="checkbox"
+							id="tuesday"
+							name="tuesday"
+							value="Tuesday"
+						/>
+						<label class="days" for="tuesday">Tuesday</label><br />
+						<input
+							type="checkbox"
+							id="wednesday"
+							name="wednesday"
+							value="Wednesday"
+						/>
+						<label class="days" for="wednesday">Wednesday</label><br />
+						<input
+							type="checkbox"
+							id="thursday"
+							name="thursday"
+							value="Thursday"
+						/>
+						<label class="days" for="thursday">Thursday</label><br />
+						<input type="checkbox" id="friday" name="friday" value="Friday" />
+						<label class="days" for="friday">Friday</label><br />
+						<input
+							type="checkbox"
+							id="saturday"
+							name="saturday"
+							value="Saturday"
+						/>
+						<label class="days" for="saturday">Saturday</label><br />
+						<input type="checkbox" id="sunday" name="sunday" value="Sunday" />
+						<label class="days" for="sunday">Sunday</label><br />
 					</section>
 					<button type="submit">Add New Goal</button>
 				</form>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="one-time-goal-style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+		/>
+		<title>HTML Wireframe - One Time Add New Goal</title>
+	</head>
+	<body>
+		<nav>Nav</nav>
+		<main>
+			<header>
+				<h1>New One-Time Goal</h1>
+			</header>
+			<section>
+				<form class="add-goal-form">
+					<section class="form-section">
+						<label for="goal-name">Goal:</label>
+						<input
+							type="text"
+							name="goal-name"
+							id="goal-name"
+							placeholder="new goal"
+							required
+						/>
+					</section>
+					<section class="goal-category">
+						<label for="goal-category">Goal category:</label>
+						<select name="goal-category" id="goal-category" required>
+							<option value="" selected disabled>Choose Category</option>
+							<option value="get-fit">Get Fit</option>
+							<option value="nutrition">Nutrition</option>
+							<option value="personal-growth">Personal Growth</option>
+							<option value="learn-skill">Learn A Skill</option>
+							<option value="be-productive">Be Productive</option>
+							<option value="mindfulness">Mindfulness</option>
+							<option value="sleep">Sleep</option>
+						</select>
+					</section>
+					<section class="goal-notes">
+						<label for="goal-notes">Goal Notes:</label>
+						<textarea
+							name="goal-notes"
+							id="goal-notes"
+							maxlength="75"
+							placeholder="optional notes"
+						></textarea>
+					</section>
+					<section class="date">
+						<label for="date">Date to Complete:</label>
+						<input type="date" id="date" name="date" />
+					</section>
+					<section class="checkbox-section">
+						<p>
+							If recurring, on what days would you like to complete this goal:
+						</p>
+						<input type="checkbox" id="monday" name="monday" value="Monday" />
+						<label for="days-of-week">Monday</label><br />
+						<input
+							type="checkbox"
+							id="tuesday"
+							name="tuesday"
+							value="Tuesday"
+						/>
+						<label for="days-of-week">Tuesday</label><br />
+						<input
+							type="checkbox"
+							id="wednesday"
+							name="wednesday"
+							value="Wednesday"
+						/>
+						<label for="days-of-week">Wednesday</label><br />
+						<input
+							type="checkbox"
+							id="thursday"
+							name="thursday"
+							value="Thursday"
+						/>
+						<label for="days-of-week">Thursday</label><br />
+						<input type="checkbox" id="friday" name="friday" value="Friday" />
+						<label for="days-of-week">Friday</label><br />
+						<input
+							type="checkbox"
+							id="saturday"
+							name="saturday"
+							value="Saturday"
+						/>
+						<label for="days-of-week">Saturday</label><br />
+						<input type="checkbox" id="sunday" name="sunday" value="Sunday" />
+						<label for="days-of-week">Sunday</label><br />
+					</section>
+					<button type="submit">Add New Goal</button>
+				</form>
+			</section>
+		</main>
+	</body>
+	<footer>Footer</footer>
+</html>

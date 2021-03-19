@@ -13,14 +13,15 @@ nav {
   left: 0;
   right: 0;
   /* z-index: 10; */
-  padding-bottom: 10px;
+  padding: 10px;
+  background-color: #aaa;
 }
 
 main {
   margin-top: 20px;
 }
 
-nav, footer {
+footer {
   padding: 10px;
   background-color: #aaa;
 }
@@ -31,10 +32,6 @@ header {
 
 h3 {
   margin: 0;
-}
-
-.main-header {
-  padding: 10px;
 }
 
 .experience-section {
@@ -51,12 +48,17 @@ h3 {
   padding: 10px;
 }
 
-.form-container {
+.start-section, form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+[type=submit], button {
+  margin: 10px;
 }
